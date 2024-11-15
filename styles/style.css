@@ -1,0 +1,610 @@
+
+/* ********** configuraciones iniciales  ********** */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    font-size: 15px;
+    font-family: "Roboto";
+}
+
+a, ul , ol, a:visited{
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a:hover{
+    color: var(--amarillo);
+}
+
+:root{
+    --verde-oscuro: #003B11;
+    --verde-dark: #175326;
+    --verde-fuerte: #227536;
+    --verde-claro: #7AB581;
+    --verde-ligth: #AAE8B0;
+
+
+    --amarillo-dark: #FBC02D;
+    --amarillo: #FFEB3B;
+    --amarillo-ligth: #E5FF23;
+
+    --gris-dark: #757575;
+    --gris: #BDBDBD;
+    --gris-light: #D9E0E6;
+    
+    --primary-text: #212121;
+    --text-icons: #212121;
+    --ligth-color: #FFF9C4;
+    
+    
+}
+
+
+
+/* *********   estilos del body  *********** */
+
+.container{
+    height: 2500px;
+    display: grid;
+    grid-template-areas: 'header header'
+                        'nav nav'
+                        'section section'
+                        'aside main'
+                        'form form'
+                        'footer footer';
+    grid-template-columns: 23% auto;
+    grid-template-rows: 60px 40px 300px auto 300px 60px;
+    background-color: var(--verde-dark);
+    /* background-image: url('https://cdn.conmebol.com/wp-content/uploads/2021/04/000_9824x2.jpg'); */
+
+}
+
+
+
+/* *********   estilos de header  *********** */
+
+header{
+    grid-area: header;
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    background-color: var(--verde-dark);
+    color: white;
+    align-items: center;
+    padding: 5px 4%;
+   
+
+}
+
+h1{
+    font-size: 20px;
+}
+
+.container-titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-titulo h2{
+    font-size: 10px;
+}
+
+.logo{
+    width: 20%;
+    height: 50px;
+}
+
+.container-busqueda{
+    width: 35%;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid var(--verde-oscuro);
+}
+
+.container-busqueda input{
+    width: 85%;
+    height: 100%;
+    padding: 2%;
+    border: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    
+}
+
+.container-busqueda button .icono-buscar{
+    display: inline-block;
+}
+.container-busqueda button{
+    width: 15%;
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: var(--verde-oscuro);
+    color: white;
+}
+
+.container-busqueda button:hover{
+    color: var(--amarillo);
+}
+
+
+
+/* **********   estilos del nav ********* */
+
+nav{
+    grid-area: nav;
+    grid-column: 1/3;
+    padding: 8px 4%;
+    background-color: var(--verde-oscuro);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+nav .icono-menu{
+    display: none;
+}
+
+.container-lista-nav-paginas{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+}
+
+.container-lista-nav-paginas li{
+    margin-right: 3%;
+}
+
+.container-lista-nav-sesion{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 40%;
+}
+
+.container-lista-nav-sesion li{
+    margin-left: 6%;
+}
+
+
+
+/* **************   estilos del section  ************** */
+
+.container-nav-ofertas{
+    background-image: linear-gradient(to right top, #fff523, #f1f717, #e2f90b, #d2fb01, #c1fd00, #b0fa00, #9ef600, #8bf300, #75ea00, #5de100, #41d800, #13cf00);
+    background-image: url("https://defensayjusticia.org.ar/wp-content/uploads/2022/10/predio_carrusel_1.jpg");
+    background-size: cover;
+    /* background-repeat: none; */
+    grid-area: section;
+    grid-column: 1/3;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1%;
+    align-items: center;
+}
+
+.container-nav-ofertas button{
+    height: 20%;
+    background-color: var(--verde-oscuro);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.container-nav-ofertas button:hover{
+    color: var(--amarillo);
+}
+
+.nav-ofertas-card{
+    width: 60%;
+    height: 100%;
+    min-width: 550px;
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+    border-radius: 5px;
+    background-color: var(--amarillo-ligth);
+    border: 1px solid var(--verde-dark);
+}
+
+.nav-ofertas-card:hover{
+    box-shadow: 0 0 15px 5px var(--verde-oscuro);
+    transition: 00.5s;
+}
+
+.nav-ofertas-card .nav-ofertas-card-imagen{
+    width: 65%;
+    height: 100%;
+    margin-right: 2%;
+}
+
+.nav-ofertas-card .nav-ofertas-card-detalle{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: var(--verde-oscuro);
+}
+
+.nav-ofertas-card .nav-ofertas-card-detalle h3{
+    margin-top: 5px;
+    height: 1.5rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid var(--verde-oscuro);
+}
+
+.nav-ofertas-card .nav-ofertas-card-detalle h4{
+    margin-top: 5px;
+    height: 1rem;
+}
+
+.nav-ofertas-card .nav-ofertas-card-detalle p{
+    height: auto;
+    margin: 0;
+    margin-top: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.nav-ofertas-card .nav-ofertas-card-detalle button{
+    height: 1.5rem;
+    font-size: 1rem;
+    width: 60%;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: 0;
+    background-color: var(--verde-dark);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 0;
+}
+
+.nav-ofertas-card .nav-ofertas-card-detalle button:hover{
+    height: 1.7rem;
+    width: 62%;
+    color: var(--amarillo-dark);
+}
+
+/* *********    estilos del main *********** */
+
+main{
+    grid-area: main;
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    padding: 2% 5% 2% 1%;
+}
+
+main img{
+    width: 100%;
+
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+}
+
+main p{
+    margin-bottom: 20px;
+    height: 4%;
+    background-color: var(--amarillo-ligth);
+    padding: 2%;
+    color: var(--verde-oscuro);
+}
+
+.container-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    width: 100%;
+    height: 98%;
+}
+
+.card{
+    width: 31%;
+    height: 460px;
+    margin-bottom: 2%;
+    min-width: 230px;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    border-radius: 5px;
+    background-color: var(--amarillo-ligth);
+    /* border: 1px solid var(--verde-dark); */
+    /* box-shadow: 5px 5px 5px 10px rgba(0, 0, 0, 0.3); */
+
+}
+
+.card:hover{
+    box-shadow: 0 0 15px 15px var(--verde-oscuro);
+    transition: 00.5s;
+}
+
+.card .card-imagen{
+    width: 100%;
+    height: 55%;
+    margin-bottom: 2%;
+}
+
+.card .card-detalle{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    color: var(--verde-oscuro);
+}
+
+.card .card-detalle h3{
+    margin-top: 5px;
+    height: 1.5rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid var(--verde-oscuro);
+}
+
+.card .card-detalle h4{
+    margin-top: 5px;
+    height: 1rem;
+}
+
+.card .card-detalle p{
+    height: auto;
+    margin: 0;
+    margin-top: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.card .card-detalle button{
+    height: 1.5rem;
+    width: 50%;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: 0;
+    background-color: var(--verde-dark);
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.card .card-detalle button:hover{
+    height: 1.7rem;
+    width: 52%;
+    color: var(--amarillo-dark);
+}
+
+/* ***********   estilos del aside   ************ */
+
+aside{
+    grid-area: aside;
+    grid-column: 1/2;
+
+    padding: 20% 5% 7% 17%;
+}
+
+aside .icono-aside{
+    display: none;
+}
+
+aside .container-boxes-sidebar{
+    display: flex;
+    flex-direction: column;
+}
+
+aside .container-boxes-sidebar .box{
+    margin-bottom: 7%;
+    height: 250px;
+    background-color: var(--amarillo-ligth);
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+aside .container-boxes-sidebar .box .titulo{
+    height: 2rem;
+    color: var(--verde-oscuro);
+    border-bottom: solid var(--verde-oscuro);
+    margin-bottom: 2px;
+    font-size: 1.2rem;
+}
+
+aside .container-boxes-sidebar .box .listado{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+aside .container-boxes-sidebar .box .listado li{
+    display: flex;
+}
+
+aside .container-boxes-sidebar .box .listado li a{
+    color: var(--verde-oscuro);
+    height: 1.rem;
+    margin-top: 8px;
+}
+
+aside .container-boxes-sidebar .box .listado li a:hover{
+    color: var(--verde-oscuro);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+
+
+/* **********   estilos del formulario   *********** */
+
+.sesion-home{
+    grid-area: form;
+    grid-column: 1/3;
+
+    background-color: var(--verde-dark);
+    background-image: url("https://mundialdefondo.com/mdf-press/wp-content/uploads/2021/04/DyJ-CAMPEON-3.jpg");
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.sesion-home form h2{
+    margin: auto;
+    font-size: 1.5rem;
+    color: var(--verde-oscuro);
+    border-bottom: 1px solid var(--verde-oscuro);
+}
+
+.sesion-home form{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    min-width: 450px;
+    margin: auto;
+    color: var(--verde-oscuro);
+    background-color: var(--amarillo-ligth);
+    border-radius: 5px;
+    border: 1px solid var(--verde-fuerte);
+}
+
+.sesion-home .datos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sesion-home .datos .campo{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+
+}
+
+.sesion-home .comentarios{
+    display: flex;
+    flex-direction: column;
+}
+
+.sesion-home form label{
+    margin-top: 10px;
+}
+
+.sesion-home form button{
+    margin: auto;
+    margin-top: 10px;
+    width: 30%;
+    background-color: var(--verde-oscuro);
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    
+}
+
+.sesion-home form button:hover{
+    color: var(--amarillo-dark);
+    height: 2rem;
+    width: 31%;
+} 
+
+/* **********   estilos del footer   ************ */
+
+footer{
+    grid-area: footer;
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+/* *******************************************************
+*******************************************************
+                disenio responsivo
+*******************************************************
+******************************************************* */
+
+
+@media (max-width: 600px) {
+    .container{
+        grid-template-columns: 10% auto;
+    }
+
+    .container-titulo{
+        display: none;
+    }
+
+    .container .logo{
+        width: 25%;
+        height: 80%;
+        margin-right: 5%;
+    }
+    .container-busqueda{
+        width: 70%;
+    }
+
+    .container-busqueda button span{
+        display: none;
+    }
+    .container-busqueda button .icono-buscar{
+        display: inline-block;
+        color: white;
+    }
+
+    .container-lista-nav-paginas, .container-lista-nav-sesion{
+        display: none;
+    }
+    
+    nav .icono-menu{
+        display: flex;
+        width: 20%;
+        height: 100%;
+        color: white;
+        background-color: var(--verde-oscuro);
+        border: none;
+        
+    }
+
+    nav .icono-menu:hover{
+        color: var(--amarillo-dark);
+    }
+
+    aside .icono-aside{
+        display: inline-block;
+        color: white;
+    }
+
+    aside .icono-aside:hover{
+        color: var(--amarillo-dark);
+    }
+
+    aside .container-boxes-sidebar, .box{
+        display: none;
+    }
+
+
+}

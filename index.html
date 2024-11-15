@@ -4,17 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+   
+
+
+    <title>Mundo DyJ</title>
 </head>
-<body>
+<body class="container">
     <header>
-        <img src="./images/defensa.png" alt="escudo">
-        <img src="./images/logo.png" alt="logo">
-        <h1>Mi pagina web</h1>
-        <h2>Esta es una pagina web diseñada para Talento Tech</h2>
+        <img src="./images/logo.png" alt="logo" class="logo">
+        <div class="container-busqueda">
+            <input type="text" placeholder="Buscar">
+            <button>
+                <i class="material-icons icono-buscar">search</i>
+            </button>
+        </div>
+        <div class="container-titulo">
+            <h1>Mi pagina web</h1>
+            <h2>Esta es una pagina web diseñada para Talento Tech</h2>
+        </div>
     </header>
     <nav>
-        <ul>
+        <button class="icono-menu">
+            <i class="material-icons icono-buscar">menu</i>
+        </button>
+        <ul class="container-lista-nav-paginas">
             <li>
                 <a href="./index.html">Inicio</a>
             </li>
@@ -25,28 +45,193 @@
                 <a href="./pages/contactos.html">Contactos</a>
             </li>
         </ul>
+        <ul class="container-lista-nav-sesion">
+            <li>
+                <a href="./pages/login.html">Iniciar Sesion</a>
+            </li>
+            <li>
+                <a href="./pages/register.html">Registrarse</a>
+            </li>
+        </ul>
     </nav>
+    <section class="container-nav-ofertas">
+        <button>
+            <i class="material-icons icono-buscar">arrow_back_ios</i>
+        </button>
+        <div class="nav-ofertas-card">
+            <img src="./images/camisetas/camiseta1.PNG" alt="" class="nav-ofertas-card-imagen">
+            <div class="nav-ofertas-card-detalle">
+                <h3 class="nav-ofertas-card-titulo">Titulo 1</h3>
+                <h4 class="nav-ofertas-card-precio">$1000</h4>
+                <p class="nav-ofertas-card-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nobis rem molestiae nulla dolorem id neque recusandae? tempora!</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <button>
+            <i class="material-icons icono-buscar">arrow_forward_ios</i>
+        </button>
+    </section>
     <main>
         <p>Esta pagina web esta diseñada para el curso <strong>Talento Tech</strong> de la ciudad de buenos aires para el desarrollo 
-        de habilidades del siglo XXI y potenciar el trabajo del futuro</p>
-
-        <section>
+            de habilidades del siglo XXI y potenciar el trabajo del futuro
+        </p>
+        <!-- <section>
             <img src="https://media.tycsports.com/files/2022/02/25/395112/defensa-y-justicia-vs-gimnasia_1440x810_wmk.jpg?v=1" alt="imagen de dyj">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/iv3uuU4Xm_E?si=g5AdwvljpqpqgheR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </section>
-        <form action="https://formspree.io/f/xyzygavd" method="POST">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" required>
-
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" required>
-
-            <label for="mensaje">Mensaje</label>
-            <textarea name="mensaje" id="mensaje" cols="50" rows="4" required></textarea>
-
-            <button type="submit">Enviar</button>
-        </form>
+        </section> -->
+        <div class="container-card">
+            <div class="card">
+                <img src="./images/camisetas/camiseta1.PNG" alt="" class="card-imagen">
+                <div class="card-detalle">
+                    <h3 class="card-titulo">Titulo 1</h3>
+                    <h4 class="card-precio">$1000</h4>
+                    <p class="card-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nobis rem molestiae nulla dolorem id neque recusandae? tempora!</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/camisetas/camiseta1.PNG" alt="" class="card-imagen">
+                <div class="card-detalle">
+                    <h3 class="card-titulo">Titulo 1</h3>
+                    <h4 class="card-precio">$1000</h4>
+                    <p class="card-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nobis rem molestiae nulla dolorem id neque recusandae? tempora!</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/camisetas/camiseta1.PNG" alt="" class="card-imagen">
+                <div class="card-detalle">
+                    <h3 class="card-titulo">Titulo 1</h3>
+                    <h4 class="card-precio">$1000</h4>
+                    <p class="card-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nobis rem molestiae nulla dolorem id neque recusandae? tempora!</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/camisetas/camiseta1.PNG" alt="" class="card-imagen">
+                <div class="card-detalle">
+                    <h3 class="card-titulo">Titulo 1</h3>
+                    <h4 class="card-precio">$1000</h4>
+                    <p class="card-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nobis rem molestiae nulla dolorem id neque recusandae? tempora!</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/camisetas/camiseta1.PNG" alt="" class="card-imagen">
+                <div class="card-detalle">
+                    <h3 class="card-titulo">Titulo 1</h3>
+                    <h4 class="card-precio">$1000</h4>
+                    <p class="card-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nobis rem molestiae nulla dolorem id neque recusandae? tempora!</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/camisetas/camiseta1.PNG" alt="" class="card-imagen">
+                <div class="card-detalle">
+                    <h3 class="card-titulo">Titulo 1</h3>
+                    <h4 class="card-precio">$1000</h4>
+                    <p class="card-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nobis rem molestiae nulla dolorem id neque recusandae? tempora!</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/camisetas/camiseta1.PNG" alt="" class="card-imagen">
+                <div class="card-detalle">
+                    <h3 class="card-titulo">Titulo 1</h3>
+                    <h4 class="card-precio">$1000</h4>
+                    <p class="card-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nobis rem molestiae nulla dolorem id neque recusandae? tempora!</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/camisetas/camiseta1.PNG" alt="" class="card-imagen">
+                <div class="card-detalle">
+                    <h3 class="card-titulo">Titulo 1</h3>
+                    <h4 class="card-precio">$1000</h4>
+                    <p class="card-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nobis rem molestiae nulla dolorem id neque recusandae? tempora!</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/camisetas/camiseta1.PNG" alt="" class="card-imagen">
+                <div class="card-detalle">
+                    <h3 class="card-titulo">Titulo 1</h3>
+                    <h4 class="card-precio">$1000</h4>
+                    <p class="card-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nobis rem molestiae nulla dolorem id neque recusandae? tempora!</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </div>
     </main>
+    <aside>
+        <i class="material-icons icono-buscar icono-aside">more_vert</i>
+        <div class="container-boxes-sidebar">
+            <div class="box">
+                <h2 class="titulo">Categoria</h2>
+                <ul class="listado">
+                    <li>
+                        <a href="">camisetas</a>
+                    </li>
+                    <li>
+                        <a href="">gorros</a>
+                    </li>
+                    <li>
+                        <a href="">bufandas</a>
+                    </li>
+                    <li>
+                        <a href="">shorts</a>
+                    </li>
+                    <li>
+                        <a href="">camperas</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2 class="titulo">Marcas</h2>
+                <ul class="listado">
+                    <li>
+                        <a href="">Sport Lyon</a>
+                    </li>
+                    <li>
+                        <a href="">Lotto</a>
+                    </li>
+                    <li>
+                        <a href="">Adidas</a>
+                    </li>
+                    <li>
+                        <a href="">Penalty</a>
+                    </li>
+                    <li>
+                        <a href="">Nolan</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <section class="sesion-home">
+        <form action="https://formspree.io/f/xyzygavd" method="POST">
+            <h2>Registrate en Mundo DyJ</h2>
+            <div class="datos">
+                <div class="campo">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" required>
+                </div> 
+                <div class="campo">
+                    <label for="nombre">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" required>
+                </div> 
+            </div>
+            <div class="comentarios">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" cols="50" rows="4" required></textarea>
+            </div>
+            <button type="submit">Registrate</button>
+        </form>
+    </section>
     <footer>
         <p>Una creacion de Nicolas Ochoa. Todos los derechos reservados</p>
     </footer>
