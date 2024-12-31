@@ -79,93 +79,13 @@
             <img src="https://media.tycsports.com/files/2022/02/25/395112/defensa-y-justicia-vs-gimnasia_1440x810_wmk.jpg?v=1" alt="imagen de dyj">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/iv3uuU4Xm_E?si=g5AdwvljpqpqgheR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section> -->
-        <div class="container-card">
-            <div class="card">
-                <img src="./images/camisetas/camiseta1.PNG" alt="" class="card-imagen">
-                <div class="card-detalle">
-                    <h3 class="card-titulo">Titulo 1</h3>
-                    <h4 class="card-precio">$1000</h4>
-                    <p class="card-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nobis rem molestiae nulla dolorem id neque recusandae? tempora!</p>
-                    <button>Comprar</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./images/camisetas/camiseta1.PNG" alt="" class="card-imagen">
-                <div class="card-detalle">
-                    <h3 class="card-titulo">Titulo 1</h3>
-                    <h4 class="card-precio">$1000</h4>
-                    <p class="card-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nobis rem molestiae nulla dolorem id neque recusandae? tempora!</p>
-                    <button>Comprar</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./images/camisetas/camiseta1.PNG" alt="" class="card-imagen">
-                <div class="card-detalle">
-                    <h3 class="card-titulo">Titulo 1</h3>
-                    <h4 class="card-precio">$1000</h4>
-                    <p class="card-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nobis rem molestiae nulla dolorem id neque recusandae? tempora!</p>
-                    <button>Comprar</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./images/camisetas/camiseta1.PNG" alt="" class="card-imagen">
-                <div class="card-detalle">
-                    <h3 class="card-titulo">Titulo 1</h3>
-                    <h4 class="card-precio">$1000</h4>
-                    <p class="card-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nobis rem molestiae nulla dolorem id neque recusandae? tempora!</p>
-                    <button>Comprar</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./images/camisetas/camiseta1.PNG" alt="" class="card-imagen">
-                <div class="card-detalle">
-                    <h3 class="card-titulo">Titulo 1</h3>
-                    <h4 class="card-precio">$1000</h4>
-                    <p class="card-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nobis rem molestiae nulla dolorem id neque recusandae? tempora!</p>
-                    <button>Comprar</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./images/camisetas/camiseta1.PNG" alt="" class="card-imagen">
-                <div class="card-detalle">
-                    <h3 class="card-titulo">Titulo 1</h3>
-                    <h4 class="card-precio">$1000</h4>
-                    <p class="card-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nobis rem molestiae nulla dolorem id neque recusandae? tempora!</p>
-                    <button>Comprar</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./images/camisetas/camiseta1.PNG" alt="" class="card-imagen">
-                <div class="card-detalle">
-                    <h3 class="card-titulo">Titulo 1</h3>
-                    <h4 class="card-precio">$1000</h4>
-                    <p class="card-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nobis rem molestiae nulla dolorem id neque recusandae? tempora!</p>
-                    <button>Comprar</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./images/camisetas/camiseta1.PNG" alt="" class="card-imagen">
-                <div class="card-detalle">
-                    <h3 class="card-titulo">Titulo 1</h3>
-                    <h4 class="card-precio">$1000</h4>
-                    <p class="card-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nobis rem molestiae nulla dolorem id neque recusandae? tempora!</p>
-                    <button>Comprar</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./images/camisetas/camiseta1.PNG" alt="" class="card-imagen">
-                <div class="card-detalle">
-                    <h3 class="card-titulo">Titulo 1</h3>
-                    <h4 class="card-precio">$1000</h4>
-                    <p class="card-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nobis rem molestiae nulla dolorem id neque recusandae? tempora!</p>
-                    <button>Comprar</button>
-                </div>
-            </div>
+        <div class="container-card" id="containerCard">
+            
         </div>
     </main>
     <aside>
         <i class="material-icons icono-buscar icono-aside">more_vert</i>
-        <div class="container-boxes-sidebar">
+        <div class="container-boxes-sidebar" id="sidebar">
             <div class="box">
                 <h2 class="titulo">Categoria</h2>
                 <ul class="listado">
@@ -206,10 +126,20 @@
                     </li>
                 </ul>
             </div>
+            <div class="box-carrito box">
+                <h2 class="titulo">Carrito de Compras</h2>
+                <div id="carrito-resumen">
+                    <p></p>
+                    <button id="carrito-resumen-comprar" onclick="comprar()">Comprar</button>
+                </div>
+                <ul id="carrito-listado">
+                    
+                </ul>
+            </div>
         </div>
     </aside>
     <section class="sesion-home">
-        <form action="https://formspree.io/f/xyzygavd" method="POST">
+        <form action="https://formspree.io/f/xyzygavd" method="POST" id="registroForm">
             <h2>Registrate en Mundo DyJ</h2>
             <div class="datos">
                 <div class="campo">
@@ -235,5 +165,7 @@
     <footer>
         <p>Una creacion de Nicolas Ochoa. Todos los derechos reservados</p>
     </footer>
+
+    <script src="./scripts/script.js"></script>
 </body>
 </html>

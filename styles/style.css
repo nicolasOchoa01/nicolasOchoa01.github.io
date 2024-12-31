@@ -372,9 +372,17 @@ main p{
     padding-bottom: 2px;
 }
 
+.card .card-detalle .card-detalle-botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
 .card .card-detalle button{
     height: 1.5rem;
-    width: 50%;
+    width: 45%;
     margin: auto;
     margin-top: auto;
     margin-bottom: 0;
@@ -418,6 +426,48 @@ aside .container-boxes-sidebar .box{
     border-radius: 5px;
 }
 
+aside .container-boxes-sidebar .box-carrito{
+    height: auto;
+    
+}
+
+aside .container-boxes-sidebar .box-carrito #carrito-resumen {
+    margin-top: 5px;
+}
+
+aside .container-boxes-sidebar .box-carrito #carrito-resumen p{
+    font-weight: bold;
+}
+
+aside .container-boxes-sidebar .box-carrito #carrito-resumen button{
+    height: 1.5rem;
+    width: 45%;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: 0;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+aside .container-boxes-sidebar .box-carrito #carrito-resumen button:hover{
+    height: 1.7rem;
+    width: 52%;
+    color: var(--amarillo-dark);
+}
+
+aside .container-boxes-sidebar .box-carrito ul{
+    margin-top: 5px;
+}
+
+aside .container-boxes-sidebar .box-carrito ul li{
+    border: solid 1px var(--verde-dark);
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+
 aside .container-boxes-sidebar .box .titulo{
     height: 2rem;
     color: var(--verde-oscuro);
@@ -436,10 +486,55 @@ aside .container-boxes-sidebar .box .listado li{
     display: flex;
 }
 
-aside .container-boxes-sidebar .box .listado li a{
+aside .container-boxes-sidebar .box .listado li a,p{
     color: var(--verde-oscuro);
     height: 1.rem;
     margin-top: 8px;
+}
+
+aside .container-boxes-sidebar .box-carrito #carrito-listado #cantidad-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+aside .container-boxes-sidebar .box-carrito #carrito-listado #cantidad-container button{
+    height: 1.5rem;
+    width: 20%;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: 0;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    align-items: center;
+}
+
+aside .container-boxes-sidebar .box-carrito #carrito-listado #cantidad-container button:hover{
+    height: 1.7rem;
+    width: 22%;
+    color: var(--amarillo-dark);
+}
+
+aside .container-boxes-sidebar .box ul li button{
+    height: 1.5rem;
+    width: 45%;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: 0;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    align-items: center;
+}
+
+
+aside .container-boxes-sidebar .box ul li button:hover{
+    height: 1.7rem;
+    width: 52%;
+    color: var(--amarillo-dark);
 }
 
 aside .container-boxes-sidebar .box .listado li a:hover{
@@ -535,6 +630,10 @@ footer{
     justify-content: center;
     align-items: center;
     background-color: black;
+    color: white;
+}
+
+footer p{
     color: white;
 }
 
