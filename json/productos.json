@@ -1,54 +1,54 @@
 [
     {
-        "imagen": "./images/camisetas/camiseta1.png",
+        "imagen": "https://github.com/nicolasOchoa01/nicolasOchoa01.github.io/blob/master/images/camisetas/camiseta1.PNG",
         "titulo": "Camiseta Edición Especial",
         "precio": "$50000",
         "descripcion": "Una camiseta de edición limitada con materiales premium, ideal para cualquier ocasión y con un diseño moderno y elegante."
     },
     {
-        "imagen": "./images/camisetas/camiseta1.png",
+        "imagen": "https://github.com/nicolasOchoa01/nicolasOchoa01.github.io/blob/master/images/camisetas/camiseta1.PNG",
         "titulo": "Camiseta Casual Negra",
         "precio": "$55000",
         "descripcion": "Perfecta para el día a día, esta camiseta negra ofrece comodidad y estilo, fabricada con algodón suave de alta calidad."
     },
     {
-        "imagen": "./images/camisetas/camiseta1.png",
+        "imagen": "https://github.com/nicolasOchoa01/nicolasOchoa01.github.io/blob/master/images/camisetas/camiseta1.PNG",
         "titulo": "Camiseta Deportiva Pro",
         "precio": "$60000",
         "descripcion": "Diseñada para el máximo rendimiento deportivo, con tecnología que absorbe la humedad y mantiene la piel seca en todo momento."
     },
     {
-        "imagen": "./images/camisetas/camiseta1.png",
+        "imagen": "https://github.com/nicolasOchoa01/nicolasOchoa01.github.io/blob/master/images/camisetas/camiseta1.PNG",
         "titulo": "Camiseta Vintage Style",
         "precio": "$70000",
         "descripcion": "Un diseño retro que nunca pasa de moda, ideal para quienes buscan un look clásico y auténtico en su guardarropa."
     },
     {
-        "imagen": "./images/camisetas/camiseta1.png",
+        "imagen": "https://github.com/nicolasOchoa01/nicolasOchoa01.github.io/blob/master/images/camisetas/camiseta1.PNG",
         "titulo": "Camiseta Urbana Blanca",
         "precio": "$75000",
         "descripcion": "Estilo urbano con un corte moderno y fresco. Perfecta para destacar en reuniones informales o salidas con amigos."
     },
     {
-        "imagen": "./images/camisetas/camiseta1.png",
+        "imagen": "https://github.com/nicolasOchoa01/nicolasOchoa01.github.io/blob/master/images/camisetas/camiseta1.PNG",
         "titulo": "Camiseta de Algodón Orgánico",
         "precio": "$80000",
         "descripcion": "Confeccionada con materiales sostenibles, esta camiseta es suave, cómoda y respetuosa con el medio ambiente."
     },
     {
-        "imagen": "./images/camisetas/camiseta1.png",
+        "imagen": "https://github.com/nicolasOchoa01/nicolasOchoa01.github.io/blob/master/images/camisetas/camiseta1.PNG",
         "titulo": "Camiseta Oversize",
         "precio": "$85000",
         "descripcion": "Un estilo relajado y moderno con un ajuste holgado, ideal para quienes prefieren comodidad sin perder el estilo."
     },
     {
-        "imagen": "./images/camisetas/camiseta1.png",
+        "imagen": "https://github.com/nicolasOchoa01/nicolasOchoa01.github.io/blob/master/images/camisetas/camiseta1.PNG",
         "titulo": "Camiseta con Estampado Artístico",
         "precio": "$90000",
         "descripcion": "Una camiseta única con estampados exclusivos, diseñada para destacar y expresar un estilo personal auténtico."
     },
     {
-        "imagen": "./images/camisetas/camiseta1.png",
+        "imagen": "https://github.com/nicolasOchoa01/nicolasOchoa01.github.io/blob/master/images/camisetas/camiseta1.PNG",
         "titulo": "Camiseta Premium Classic",
         "precio": "$100000",
         "descripcion": "Elegancia y calidad se combinan en esta camiseta clásica, con materiales duraderos y un ajuste perfecto."
